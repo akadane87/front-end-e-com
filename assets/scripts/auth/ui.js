@@ -1,7 +1,7 @@
 'use strict';
 
 const store = require('../store.js');
-
+// const signInPrompt = require('../templates/sign-in-prompt.handlebars');
 
 const clear = (modal) => {
     setTimeout(function() {
@@ -18,6 +18,8 @@ const signUpSuccess = function(signUpData) {
   $('#sign-up').trigger('reset');
   $('.signup-messages').html('You may Login now.');
   clear('#signUpModal');
+  $('#prompt-target').hide();
+  $('body').removeClass('no-scroll');
   return signUpData;
 };
 
@@ -44,6 +46,8 @@ $('#cart-button').hide();
 $('#checkout-button').hide();
 $('.signin-messages').html('You have logged in!');
 clear('#signInModal');
+$('#prompt-target').hide();
+$('body').removeClass('no-scroll');
 };
 
 const signInFailure = function() {
@@ -69,6 +73,13 @@ const signOutSuccess = function() {
   $('.signed-out').show();
   $('#order-history').empty();
   clear('#signOutModal');
+
+  $('#prompt-target').show();
+  window.scrollTo(0,0);
+  // $(window).trigger('.prompt-button');
+
+
+  $('body').addClass('no-scroll');
 };
 
 const failure = function() {
