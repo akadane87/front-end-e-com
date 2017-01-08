@@ -39,7 +39,7 @@ const addItemSuccess = function(data) {
   console.log('Item in cart', data);
   $('#cart-button').show();
   $('#checkout-button').show();
-  // $('#productModal').modal('toggle');
+  $('#productModal').modal('toggle');
   //  $('').html((data));
   //  return data;
 };
