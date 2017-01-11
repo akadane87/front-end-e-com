@@ -21,9 +21,9 @@ $(()=>{
   productEvents.onGetAllProducts();
   stripeEvents.addHandlers();
 
-  // $('#prompt-target').html(signInPrompt);
-  // $('body').addClass('no-scroll');
-  // window.scrollTo(0,0);
+  $('#prompt-target').html(signInPrompt);
+  $('body').addClass('no-scroll');
+  window.scrollTo(0,0);
 
   $('.signed-in').hide();
 

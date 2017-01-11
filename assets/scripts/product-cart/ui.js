@@ -39,7 +39,8 @@ const addItemSuccess = function(data) {
   console.log('Item in cart', data);
   $('#cart-button').show();
   $('#checkout-button').show();
-  $('#productModal').modal('toggle');
+  $('.ufm-single-product').html('Watch added to cart successfully!');
+  // $('#productModal').modal('toggle', 550);
   //  $('').html((data));
   //  return data;
 };
