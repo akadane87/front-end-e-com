@@ -1,19 +1,56 @@
+.prompt-container {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: #9c3f3d; */
+    /* opacity: .7; */
+    /*border: 1px solid cyan;*/
+    /* z-index: 27; */
+    /* position: absolute; */
+}
+
 .prompt-body {
     margin-top: 0;
     width: 100%;
     height: 94%;
     background-color: #9c3f3d;
-    opacity: .7;
-    border: 1px solid cyan;
+    /* opacity: .7; */
+    /* border: 1px solid cyan; */
     /* z-index: 27; */
-    position: absolute;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    text-align: center;
 }
 
-.prompt-text{
-  color: white;
-  font-size: 80px;
-  text-align: center;
-  margin-top: 15%;
+.prompt-text-one {
+    color: black;
+    font-size: 60px;
+    /* background-color: black; */
+    text-align: center;
+    /* margin-top: 15%; */
+    z-index: 5;
+    position: absolute;
+    top: 110px;
+    left: 40%;
+    transform: skewX(-10deg);
+    font-family: 'Pacifico', sans-serif;
+}
+
+.prompt-text-two {
+    color: black;
+    font-size: 60px;
+    /* background-color: black; */
+    text-align: center;
+    /* margin-top: 15%; */
+    z-index: 5;
+    position: absolute;
+    bottom: 157px;
+    left: 32%;
+    transform: skewX(-10deg);
+    font-family: 'Pacifico', sans-serif;
 }
 
 /*///////////   for BODY - no scroll  ////////////*/
@@ -29,11 +66,50 @@
   z-index: 1000;
 }
 
+.title-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 14px;
+    /* float: left; */
+    position: relative;
+    top: 9px;
+    left: 12px;
+    display: inline;
+}
+
+.title-span-one {
+    font-size: 8px;
+    color: white;
+    /* display: inline; */
+    padding: 3px;
+}
+
+.title-span-two {
+    font-size: 14px;
+    color: #d96b69;
+}
+
+.icon-wrapper {
+    /*border: 1px solid green;*/
+    text-align: center;
+    position: relative;
+    bottom: 298%;
+}
+
 .title-bar-logo {
-    display: block;
-    margin: 0 auto;
-    width: 6%;
-    background-size: cover;
+    display: inline-block;
+    z-index: 3;
+    /* position: absolute; */
+    /* top: 15px; */
+    /* bottom: 107px; */
+    /* left: 47%; */
+    /* margin: 0 auto; */
+    /* overflow: auto; */
+    /* width: 5%; */
+    min-width: 64px;
+    max-width: 80px;
+    /* background-size: cover; */
     background-color: black;
     border-radius: 100%;
 }
@@ -93,42 +169,57 @@
   margin: 0 auto;
 }
 
-#gears{
-  /*position: fixed;
-  bottom: 0;*/
+#gears {
+    /* overflow: overlay; */
+    text-align: center;
+    /*border: 1px solid cyan;*/
+    z-index: -1;
+    margin-top: -65px;
+    /* position: absolute; */
+    /* left: 50px; */
 }
 
 #gear1 {
-    width: 134px;
-    height: 130px;
-    z-index: -1;
-     position: absolute;
-     bottom: -15px;
-     right: 46vw;
-     margin: 0 auto;
-     overflow: hidden;
-    /*border: 1px solid pink;*/
+    width: 165px;
+    max-width: 20%;
+    /* height: 150px; */
+    z-index: -4;
+    position: relative;
+    /* top: -35px; */
+    /* right: 42vw; */
+    /* margin: 0 auto; */
+    /* overflow: hidden; */
+    /* border: 1px solid pink; */
 }
-
 
 .about {
     width: 100%;
-    height: 400px;
+    height: 460px;
     background-color: #a94442;
     overflow: auto;
     text-align: center;
-    background-image: url(http://i.imgur.com/DHjur2T.jpg);
-    background-position: right;
-    background-size: 50%;
+    background-image: url(http://i.imgur.com/vYF34Yx.png);
+    background-position: center;
+    background-size: 105%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
 }
 
+.about-heading {
+    font-size: 40px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-top: 39px;
+}
 
-.about-heading{
-  font-size: 40px;
-  text-align: center;
-  color: white;
+.title-style {
+    font-family: 'Pacifico',cursive;
+    font-size: 31px;
+    display: inline-block;
+    padding-bottom: 16px;
+    transform: skewX(-8deg);
 }
 
 /*hr{
@@ -153,10 +244,11 @@
 }
 
 .placeholder-text {
-    /* font-family: 'Heebo', sans-serif; */
+    font-family: 'Heebo', sans-serif;
     font-size: 15px;
     font-weight: lighter;
     text-align: center;
+    line-height: 28px;
     margin-top: 10px;
     color: white;
     width: 25%;
@@ -179,8 +271,52 @@
     background-repeat: no-repeat;
 }
 
+.arm-text {
+    font-family: 'Heebo', sans-serif;
+    /* border: solid 1px yellow; */
+    position: absolute;
+    top: 496px;
+    left: 542px;
+    /* color: black; */
+}
 
+.its {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    float: left;
+    font-size: 87px;
+    clear: right;
+}
 
+.time {
+    display: block;
+    float: right;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    border-top: 5px solid red;
+    margin-top: 17px;
+    margin-left: 35px;
+}
+
+.to {
+    display: block;
+    font-size: 40px;
+    position: relative;
+    left: 36px;
+    bottom: 20px;
+}
+
+.shop {
+    display: block;
+    font-size: 40px;
+    letter-spacing: 5px;
+    /* float: right; */
+    position: relative;
+    left: 216px;
+    bottom: 77px;
+}
 /*////// Body Image ///////*/
 
 .background-image {
@@ -197,7 +333,9 @@
 .content-container {
     width: 41%;
     min-width: 370px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
 }
 
 .background-gear{
@@ -213,7 +351,7 @@
 }
 
 /*///// AUTH modal styles /////*/
-.ufm-change-password, .ufm-cart, .ufm-single-product, .cart-items {
+.ufm-change-password, .ufm-cart, .ufm-single-product, {
   font-family: 'Heebo', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -230,35 +368,42 @@
 }
 
 .product-module {
-    width: 72%;
+    width: 88%;
+    height: 676px;
     min-width: 280px;
     /* border: 1px solid purple; */
     clear: right;
     margin: 500px auto 0 auto;
+    background-image: url(http://i.imgur.com/ODuBi0e.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
 .product-thumb {
-    width: 80%;
+    width: 62%;
     display: block;
     /* background-size: cover; */
     /* background-position: center; */
-    margin: 0 auto;
+    margin: 120px auto;
     /* height: 80%; */
-
 }
 
 .product-thumb-banner {
-position: relative;
+    /* border: solid 1px yellow; */
+    /* background-color: cyan; */
+    position: relative;
+    top: 143px;
 }
 
 .product-title:before {
     content: '';
     position: absolute;
     background: #000;
-    width: 260px;
-    height: 6px;
-    top: 4px;
-    left: 51%;
+    width: 243px;
+    height: 5px;
+    top: 9px;
+    left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -268,11 +413,11 @@ position: relative;
 
 
 .product-title {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 40px;
-    font-weight: 900;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 37px;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
     /* border-top: 7px solid black; */
     /* border-bottom: 7px solid black; */
     padding: 15px 0;
@@ -287,8 +432,8 @@ position: relative;
     position: absolute;
     background: rgb(0, 0, 0);
     width: 80px;
-    height: 6px;
-    bottom: 1px;
+    height: 5px;
+    bottom: 10px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -484,6 +629,15 @@ position: relative;
     overflow: auto;
 }
 
+.quantity {
+  width: 40px;
+  margin-left: 40px;
+}
+
+/*.update-cart-item {
+  margin-right: 10px;
+}*/
+
 .cart-item-price {
     float: left;
     padding-top: 4px;
@@ -496,7 +650,7 @@ position: relative;
   border: solid 1px black;
   padding: 10px;
   font-weight: 400;
-  width: 15%;
+  /*width: 20%;*/
 }
 
 /*.cart-add {
@@ -505,13 +659,15 @@ position: relative;
 
 .checkout-button {
   float: right;
-  width: 30%;
+  /*width: 30%;*/
   height: 30px;
   color: red;
   border: none;
   color: white;
   margin-left: 30px;
 }
+/*   cart.handlebars ENDS here */
+
 /*   cart.handlebars ENDS here */
 
 
@@ -583,11 +739,11 @@ position: relative;
     margin-bottom: 50px;
 }
 
-.footer-title{
-  font-family: 'Oswald', sans-serif;
-  font-size: 20px;
-  color: rgba(254, 48, 48, 1);
-  padding-left: 10px;
+.footer-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: rgb(238, 82, 82);
+    padding-left: 10px;
 }
 
 .sqaud-link {

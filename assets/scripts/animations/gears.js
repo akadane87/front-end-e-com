@@ -1,44 +1,6 @@
 'use strict';
 
 
-// let height = $(document).height();
-// let curScrollPos = $(document).scrollTop();
-// let percentage = curScrollPos/height;
-
-
-
-
-
-// $(document).ready(function() {
-// const gearScroll = function() {
-//   console.log("gear scroll kicking");
-//     let height = $(document).height();
-//
-//     $(document).scroll(function()
-//     {
-//         // Are we moving up or down?
-//         let curScrollPos = $(document).scrollTop();
-//         let degrees = curScrollPos/height * 360; //multiply by 360, hopefully we get full 360 rotation
-//         let neg = 360 - degrees;
-//
-//         $('#gear1').css('transform', 'rotate(' + degrees + 'deg)');
-//         $('#cog2').css('transform', 'rotate(' + neg + 'deg)');
-//         $('#cog3').css('transform', 'rotate(' + degrees + 'deg)');
-//
-//     });
-// };
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Control the spinning gears
 // $(document).ready(function() {

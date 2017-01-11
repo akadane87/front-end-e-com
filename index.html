@@ -6,8 +6,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Work+Sans:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Heebo|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,900|Open+Sans+Condensed:300,700|Oswald:300,400,700|Pacifico|Work+Sans:400,900" rel="stylesheet">
+
 
   <script src="vendor.bundle.js" type="text/javascript" charset="utf-8" defer></script>
   <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
@@ -20,25 +20,29 @@
   <a href="#" class=".prompt-button"><div id="prompt-target"></div></a>
 
   <div class="title-bar" id="top-page">
+    <p class="title-text">Watchy<span class="title-span-one">MC</span><span class="title-span-two">Watchface</span></p>
+    <div id="gears">
+      <img class="gear_md" id="gear1" src="http://www.freeiconspng.com/uploads/gear-11-icon--free-icons-4.png" />
+    </div>
+    <div class="icon-wrapper">
       <img src="http://i.imgur.com/hjnZITE.png" class="title-bar-logo" alt="Watchy McWatchface">
+  </div>
   </div>
   <div class="header">
     <img src="http://i.imgur.com/w7tduwA.png" class="image-heaader-logo" alt="Watchy McWatchface">
-    <img src="http://i.imgur.com/WlWdGnv.jpg" class="image-heaader" alt="Watchy McWatchface">
+    <img src="http://i.imgur.com/5a8OItL.png" class="image-heaader" alt="Watchy McWatchface">
     </div>
   <div class="navigation">
     <div class="button-wrapper">
         <button class="nav-button signed-in" type="button" id='cart-button' data-toggle="modal" data-target="#cart">Cart</button>
         <button class="nav-button" type="button" data-toggle="modal" data-target="#authModal" aria-haspopup="true" aria-expanded="false">Login / SignOut</button>
         <button class="nav-button signed-in" type="submit" data-toggle="modal" data-target="#orderHistoryModal">Purchases</button>
-        <div id="gears">
-          <img class="gear_md" id="gear1" src="http://www.freeiconspng.com/uploads/gear-11-icon--free-icons-4.png" />
-        </div>
+
     </div>
   </div>
 
 <div class="about">
-  <h3 class="about-heading">About <br> Watchy McWatchface</h3>
+  <h3 class="about-heading"><span class="title-style">About</span> <br> Watchy McWatchface</h3>
     <hr class="line">
     <div class="placeholder-text-wrapper">
     <p class="placeholder-text">
@@ -58,8 +62,12 @@
   <!--  <img src="./assets/styles/images/Portuguese_background_2015_final.jpg"/> -->
   </div>
   <div class="arm-wrapper">
-    <p class="arm-text-one">It's Time</p>
-    <p class="arm-text-two">To Shop</p>
+    <p class="arm-text">
+      <span class="its">ITS</span>
+      <span class="time">TIME</span>
+      <span class="to">TO</span>
+      <span class="shop">SHOP</span>
+    </p>
   </div>
 </div>
 
@@ -237,47 +245,50 @@
   <!-- PRODUCT Modal ENDS here -->
 
 
-<!--CART modal STARTS here -->
-<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel">
-<div class="modal-dialog-cart" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-<h4 class="modal-title" id="cartLabel">Shopping Cart</h4>
-</div>
-<div class="modal-body">
-<div class="show-cart">
-  <div class="row cart-row">
-    <div class="col-sm-3">
-      <h5>Item</h5>
-    </div>
-    <div class="col-xs-3">
-      <h5>Price</h5>
-    </div>
-    <div class="col-xs-3">
-      <h5>Quantity</h5>
-    </div>
-    <div class="col-xs-3">
-      <h5>Delete</h5>
-    </div>
-    <br>
+  <!--CART modal STARTS here -->
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h4 class="modal-title" id="cartLabel">Shopping Cart</h4>
   </div>
-  <div class="cart-items">
-    I'm in a CART!
-  </div>
+  <div class="modal-body">
+  <div class="show-cart">
+    <div class="row cart-row">
+      <div class="col-sm-3">
+        <h5>Item</h5>
+      </div>
+      <div class="col-xs-2">
+        <h5>Price</h5>
+      </div>
+      <div class="col-xs-3">
+        <h5>Delete</h5>
+      </div>
+      <div class="col-xs-4">
+        <h5>Quantity</h5>
+      </div>
+      <br>
+    </div>
+    <div class="cart-items">
+      I'm in a CART!
+    </div>
 
-  <!--<h3 class="no-items">Your Cart is Empty!</h3>
-  <h5>Total: </h5> -->
-  <script src="https://checkout.stripe.com/checkout.js"></script>
-  <button style="display: none" type="button" class="btn btn-default create-order" id="save-order-button">Save for later</button>
-  <p class="ufm-cart">This is a User Facing Message for Cart</p>
-  <button style="display" type="button" class="btn btn-default checkout" id="checkout-button">Checkout</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!--CART modal ENDS here -->
+    <h2>TOTAL</h2>
+    <div class="price-total"></div>
+
+    <!--<h3 class="no-items">Your Cart is Empty!</h3>
+    <h5>Total: </h5> -->
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <button style="display: none" type="button" class="btn btn-default create-order" id="save-order-button">Save for later</button>
+    <p class="ufm-cart"></p>
+    <button style="display" type="button" class="btn btn-default checkout" id="checkout-button">Checkout</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!--CART modal ENDS here -->
 
 
 <!-- ORDER HISTROY Modal STARTS here -->
