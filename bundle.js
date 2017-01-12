@@ -3036,7 +3036,7 @@ webpackJsonp([0],[
 	    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.price : stack1), depth0))
 	    + ">\n      </div>\n      <div class=\"form-group\">\n        <input type=\"hidden\" name=\"item[image]\" value="
 	    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.image : stack1), depth0))
-	    + ">\n      </div>\n      <button class=\"cart-add\" type=\"submit\">Add to Cart</button>\n    </form>\n    <p class=\"ufm-single-product\">This is a User Facing Message for Single Product</p>\n  </div>\n";
+	    + ">\n      </div>\n      <button class=\"cart-add\" type=\"submit\">Add to Cart</button>\n    </form>\n    <p class=\"ufm-single-product\"></p>\n  </div>\n";
 	},"useData":true});
 
 /***/ },
