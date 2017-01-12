@@ -330,6 +330,12 @@
     z-index: -1;
 }
 
+.lax-cog {
+  width: 60px;
+  height: 60px;
+  display: inline;
+}
+
 .content-container {
     width: 41%;
     min-width: 370px;
