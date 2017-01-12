@@ -246,10 +246,10 @@
 .placeholder-text {
     font-family: 'Heebo', sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 400;
     text-align: center;
     line-height: 28px;
-    margin-top: 10px;
+    margin-top: 28px;
     color: white;
     width: 25%;
     margin-left: 15%;
@@ -703,8 +703,9 @@
 }
 
 .order-history-items > p {
-  float: left;
-  margin: 0;
+    float: left;
+    clear: both;
+    margin: 0;
 }
 
 .order-history-id, .order-history-items, .order-history-date {
@@ -739,17 +740,48 @@
     margin-bottom: 50px;
 }
 
+.mod-squad {
+    clear: both;
+    /*border: 1px solid yellow;*/
+    overflow: auto;
+    float: left;
+}
+
 .footer-title {
     font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    letter-spacing: .5px;
     font-size: 20px;
     color: rgb(238, 82, 82);
     padding-left: 10px;
+    padding-top: 20px;
 }
 
 .sqaud-link {
-  display: block;
-  color: white;
-  font-size: 12px;
+    display: block;
+    color: white;
+    font-size: 12px;
+    padding: 0px 14px;
+    /* padding-right: 17px; */
+    text-decoration: none;
+    float: left;
+    border-right: 1px solid white;
+}
+
+.bacon-wrapper {
+    float: left;
+    margin-right: 23px;
+    margin-left: 18px;
+    /* border-left: 2px solid black; */
+    /* text-align: center; */
+}
+
+.bacon-shout{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  letter-spacing: .5px;
+  font-size: 20px;
+  color: rgb(238, 82, 82);
   padding-left: 10px;
-  text-decoration: none;
+  padding-top: 20px;
 }
