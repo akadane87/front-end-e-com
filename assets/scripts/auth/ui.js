@@ -18,8 +18,8 @@ const signUpSuccess = function(signUpData) {
   $('#sign-up').trigger('reset');
   $('.signup-messages').html('You may Login now.');
   clear('#signUpModal');
-  $('#prompt-target').hide();
-  $('body').removeClass('no-scroll');
+  // $('#prompt-target').hide();
+  // $('body').removeClass('no-scroll');
   return signUpData;
 };
 
